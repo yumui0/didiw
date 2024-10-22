@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+body {
+    background: #ffebcd; /* Light background color for a cute feel */
+    color: #333; /* Dark text color */
+    text-align: center;
+    font-family: "Lora", serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.flex h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-family: "Lora", serif;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background: #f0b27a; /* Warm button color */
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #f39c12; /* Darker shade on hover */
+}
+
+.ics {
+    border: 3px solid #ddd;
+    animation: 2s increase-size infinite;
+}
+
+@keyframes increase-size {
+    0% {
+        background-color: #f39c12;
+        color: #fff;
+    }
+    50% {
+        background-color: #f0b27a;
+        color: #000;
+    }
+    100% {
+        background-color: #f39c12;
+        color: #fff;
+    }
+}
